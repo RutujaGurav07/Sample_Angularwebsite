@@ -9,7 +9,9 @@ import { Component, OnInit,ViewEncapsulation, AfterViewInit, Output, EventEmitte
 export class NavbarComponent implements OnInit {
   isNavbarCollapsed:boolean=true;
   constructor() { }
-
+toggle(){
+  this.isNavbarCollapsed=!this.isNavbarCollapsed
+}
   ngOnInit(): void {
   }
 
