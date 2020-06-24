@@ -1,3 +1,7 @@
 .nav-link{
     text-emphasis-color: black;
 }
+.container{
+    width: 100%;
+    background-color:papayawhip;
+}
