@@ -54,3 +54,13 @@
     background-position:center;
 
 }
+.contacticon{
+    width: 10%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icontext{
+    text-align: center;
+}
