@@ -1,5 +1,5 @@
 .bg {
-    background-image: url(/assets/background_image.jpg);
+    background-image: url("/assets/backgroundimagemain");
     height: 100%;
     width: 100%;
     background-position: center;
@@ -41,4 +41,16 @@
 }
 .brand-section{
     text-align: center;
+}
+.flex_column1{
+    width: 40%;
+    padding: 25px 25px 25px 25px ;
+
+}
+.flex_column2{
+    float: right;
+    padding: 75px 25px 50px 50px ;
+    width: 60%;
+    background-position:center;
+
 }
