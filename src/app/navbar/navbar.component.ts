@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewEncapsulation, AfterViewInit, Output, EventEmitter, HostListener } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -7,11 +7,8 @@ import { Component, OnInit,ViewEncapsulation, AfterViewInit, Output, EventEmitte
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  isNavbarCollapsed:boolean=true;
   constructor() { }
-toggle(){
-  this.isNavbarCollapsed=!this.isNavbarCollapsed
-}
+
   ngOnInit(): void {
   }
 
