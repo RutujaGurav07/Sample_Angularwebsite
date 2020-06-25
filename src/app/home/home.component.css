@@ -97,8 +97,9 @@
 }
 
 .feature-section-story {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     padding: 10px 10px 10px 10px;
+    height: 600px;
 }
 
 .Writingicon {
@@ -107,6 +108,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .feature-fan {
