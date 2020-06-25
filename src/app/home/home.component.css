@@ -67,11 +67,35 @@
 .icontext{
     text-align: center;
 }
-.center-half-containe{
+.center-half-container{
     padding: 75px 75px 100px 50px ;
 }
 .storyimage{
     padding: 10px 10px 10px 10px ;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
+    margin-top: 100px;
+}
+.feature-section-story{
+   margin-bottom: 270px;
+   padding: 10px 10px 10px 10px ;
+}
+.Writingicon{
+    width: 10%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.feature-fan{
+text-align: center;
+margin: 100px 10px 10px 10px;
+padding: 10px 10px 10px 10px ;
+}
+.fan_icon{
+    width: 20%;
+    height: 5%;
+    padding-bottom:20px  ;
+
+
 }
