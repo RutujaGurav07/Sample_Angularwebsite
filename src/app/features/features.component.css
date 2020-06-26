@@ -1,0 +1,143 @@
+.wrapper-en {
+    width: auto;
+}
+
+.bg {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 25px 25px 25px 25px;
+
+}
+
+.position {
+    margin-left: 50px;
+}
+
+.position2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.featureDiv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.leftdiv {
+    width: 30%;
+    float: left;
+    padding: 25px 25px 25px 25px;
+}
+
+.middlediv {
+    width: 30%;
+    float: left;
+    padding: 25px 25px 25px 25px;
+}
+
+.rightdiv {
+    width: 30%;
+    float: left;
+    padding: 25px 25px 25px 25px;
+}
+
+.feature-company-logos {
+    width: 100%;
+    height: 20%;
+    padding: 75px 25px 50px 50px;
+}
+
+.brand-section {
+    text-align: center;
+
+}
+
+.flex_column1 {
+    width: 40%;
+    padding: 25px 25px 25px 25px;
+
+}
+
+.flex_column2 {
+    float: right;
+    padding: 75px 25px 50px 50px;
+    width: 60%;
+    background-position: center;
+
+}
+
+.feature-section-realize {
+    padding: 75px 75px 75px 50px;
+}
+
+.contacticon {
+    width: 5%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icontext {
+    text-align: center;
+}
+
+.center-half-container {
+    padding: 75px 75px 75px 50px;
+}
+
+.storyimage {
+    padding: 10px 10px 10px 10px;
+    width: 110%;
+    height: 110%;
+    margin-top: 100px;
+}
+
+.feature-section-story {
+    margin-bottom: 30px;
+    padding: 10px 10px 10px 10px;
+    height: 600px;
+}
+
+.Writingicon {
+    width: 10%;
+    height: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.feature-fan {
+    text-align: center;
+    margin: 100px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.fan_icon {
+    width: 20%;
+    height: 5%;
+    padding-bottom: 20px;
+}
+
+.feature-community-image {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.community-text {
+    text-align: center;
+    margin: 50px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.Start-today
+{
+    text-align: center;
+}
