@@ -1,0 +1,48 @@
+.wrapper-en{
+    height: 100%;
+    width: 100%;
+}
+.title{
+    font-size: 4rem;
+    font-style: italic;
+   color:rgb(0, 115, 230);
+   padding: 50px 50px 50px 50px; 
+
+}
+.center-text{
+       text-align: center;
+       padding: 50px 50px 50px 50px; 
+    
+}
+.start-website-section{
+    height: 100%;
+    width: auto ;
+    background-color: aliceblue;
+    padding: 50px 50px 50px 50px; 
+}
+/* .leftimage{
+    width: 30%;
+    float: left;
+}
+.left{
+    width: auto;
+    height: auto;
+}
+.middleimage{
+    width: 30%;
+    float: left;
+}
+.middle{
+    width: auto;
+    height: auto;
+}
+.rightimage{
+    width: 30%;
+    float: left;
+} */
+.footertitle{
+    font-size: 2rem;
+    font-style: oblique;
+    font-family: "Lucida Console", Courier, monospace;
+
+}
