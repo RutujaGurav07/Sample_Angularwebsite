@@ -15,34 +15,21 @@
     
 }
 .start-website-section{
-    height: 100%;
+    height: auto;
     width: auto ;
     background-color: aliceblue;
     padding: 50px 50px 50px 50px; 
 }
-/* .leftimage{
-    width: 30%;
-    float: left;
-}
-.left{
-    width: auto;
-    height: auto;
-}
-.middleimage{
-    width: 30%;
-    float: left;
-}
-.middle{
-    width: auto;
-    height: auto;
-}
-.rightimage{
-    width: 30%;
-    float: left;
-} */
+
 .footertitle{
     font-size: 2rem;
     font-style: oblique;
     font-family: "Lucida Console", Courier, monospace;
 
+}
+.left-text{
+    text-align: left;
+}
+.build-simply-section{
+    display: block;
 }

@@ -8,13 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FeaturesComponent } from './features/features.component';
+import { GetstartComponent } from './getstart/getstart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    GetstartComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,7 @@ import { FeaturesComponent } from './features/features.component';
     RouterModule.forRoot([
       { path:'home', component:HomeComponent },
       { path:'features', component:FeaturesComponent },
+      { path:'getstart', component:GetstartComponent},
    
     ])
   ],
