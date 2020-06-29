@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit {
   }
 
   getStart():void{
-    this.router.navigate(['/getstart']);
+    this.router.navigate(['/register']);
 }
 }

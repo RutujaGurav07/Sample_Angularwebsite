@@ -4,18 +4,18 @@
     </div>
     <div class ="card-body">
         <div class="container">
-            <form novalidate [formGroup]="createaccountForm">
+            <form [formGroup]="createaccountForm" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <label for="userNameId">User name</label>
                     <div class="col">
                         <input class="form-control" id="userNameId" type="text" placeholder="username (required)"
                             formControlName="userName"
-                            [ngClass]="{'is-invalid': (createaccountForm.get('userName').touched || createaccountForm.get('userName').dirty) && !createaccountForm.get('userName').valid }" />
+                            [ngClass]="{'is-invalid': submitted && createaccountForm.get('userName').errors }" />
                         <span class="invalid-feedback">
-                            <span *ngIf="createaccountForm.get('userName').errors?.required">
+                            <span *ngIf=" submitted && createaccountForm.get('userName').errors?.required">
                                 Please enter your username name.
                             </span>
-                            <span *ngIf="createaccountForm.get('userName').errors?.minlength">
+                            <span *ngIf=" submitted && createaccountForm.get('userName').errors?.minlength">
                                 The user name must be longer than 3 characters.
                             </span>
                         </span>
@@ -27,12 +27,12 @@
                     <div class="col">
                         <input class="form-control" id="emailId" type="email" placeholder="email (required)"
                             formControlName="email"
-                            [ngClass]="{'is-invalid': (createaccountForm.get('email').touched || createaccountForm.get('email').dirty) && !createaccountForm.get('email').valid }" />
+                            [ngClass]="{'is-invalid': submitted && createaccountForm.get('email').errors}" />
                         <span class="invalid-feedback">
-                            <span *ngIf="createaccountForm.get('email').errors?.required">
+                            <span *ngIf="  submitted && createaccountForm.get('email').errors?.required">
                                 Please enter your email.
                             </span>
-                            <span *ngIf="createaccountForm.get('email').errors?.email">
+                            <span *ngIf=" submitted && createaccountForm.get('email').errors?.email">
                                 Plaease Enter vaild email.
                             </span>
                         </span>
@@ -46,7 +46,7 @@
                             <input class="form-control" id="passwordId" type="password"
                                 placeholder="password (required)" formControlName="password" />
                             <span class="invalid-feedback">
-                                <span *ngIf="createaccountForm.get('passwordGroup.password').errors?.required">
+                                <span *ngIf=" submitted && createaccountForm.get('passwordGroup.password').errors?.required">
                                     Please enter your password.
                                 </span>
                             </span>
@@ -58,16 +58,13 @@
                         <div class="col">
                             <input class="form-control" id="confirmPasswordId" type="password"
                                 placeholder="Confirm password (required)" formControlName="confirmPassword"
-                                [ngClass]="{'is-invalid': createaccountForm.get('passwordGroup').errors ||
-                                                            ((createaccountForm.get('passwordGroup.confirmPassword').touched ||  
-                                                            createaccountForm.get('passwordGroup.confirmPassword').dirty) &&
-                                                            !createaccountForm.get('passwordGroup.confirmPassword').valid )}" />
+                                [ngClass]="{'is-invalid':submitted && createaccountForm.get('passwordGroup.confirmPassword').errors}" />
                             <span class="invalid-feedback">
-                                <span *ngIf="createaccountForm.get('passwordGroup.confirmPassword').errors?.required">
+                                <span *ngIf=" submitted && createaccountForm.get('passwordGroup.confirmPassword').errors?.required">
                                     Please confirm your password.
                                 </span>
-                                <span *ngIf="createaccountForm.get('passwordGroup').errors?.match">
-                                    the confirmation does not match the password.
+                                <span *ngIf=" submitted && createaccountForm.get('passwordGroup.confirmPassword').errors?.match">
+                                    The confirmation does not match the password.
                                 </span>
                             </span>
                         </div>
@@ -78,7 +75,7 @@
                      formControlName="acceptTerms" 
                      id="acceptTerms" 
                      class="form-check-input" 
-                     [ngClass]="{ 'is-invalid': createaccountForm.get('acceptTerms').touched}" />
+                     [ngClass]="{ 'is-invalid':  submitted && createaccountForm.get('acceptTerms').errors}" />
                     <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
                     <div *ngIf="createaccountForm.get('acceptTerms').errors?. Validators.pattern('false')">
                         Please Accept Terms & Conditions.
@@ -86,8 +83,8 @@
                 </div>
 
                 <div class="btn-toolbar ">
-                    <button class="btn btn-primary" (click)='create()'> Create Account </button><button
-                        class="btn btn-secondary" (click)='onBack()'> Cancel </button>
+                    <button class="btn btn-primary mr-1">Register</button>
+                   <button class="btn btn-secondary" (click)='onBack()'> Cancel </button>
                 </div>
 
             </form>

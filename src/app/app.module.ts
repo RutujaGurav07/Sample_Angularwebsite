@@ -17,7 +17,8 @@ import { GetstartComponent } from './getstart/getstart.component';
     HomeComponent,
     NavbarComponent,
     FeaturesComponent,
-    GetstartComponent
+    GetstartComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -31,6 +32,7 @@ import { GetstartComponent } from './getstart/getstart.component';
       { path:'home', component:HomeComponent },
       { path:'features', component:FeaturesComponent },
       { path:'getstart', component:GetstartComponent},
+
    
     ])
   ],

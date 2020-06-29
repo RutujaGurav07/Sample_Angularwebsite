@@ -23,6 +23,7 @@ export class GetstartComponent implements OnInit {
   createaccountForm: FormGroup;
   pageTitle: string = "Create Your Account";
   createaccount = new Createaccount();
+  submitted = false;
 
   constructor(private fb: FormBuilder, private router: Router,) { }
 
@@ -31,7 +32,7 @@ export class GetstartComponent implements OnInit {
 
       email: ['', [Validators.required, Validators.email]],
       userName: ['', [Validators.required, Validators.minLength(3)]],
-      acceptTerms: [false,  Validators.pattern('true')],
+      acceptTerms: [false, Validators.requiredTrue],
       passwordGroup: this.fb.group({
         password: ['', [Validators.required]],
         confirmPassword: ['', Validators.required]
@@ -40,10 +41,23 @@ export class GetstartComponent implements OnInit {
     })
   }
 
-  onBack():void{
+  onBack(): void {
     this.router.navigate(['/home']);
   }
-  create():void{
-    this.router.navigate(['/home']);
+  // create(): void {
+  //   this.router.navigate(['/home']);
+  // }
+
+  onSubmit() {
+    this.submitted = true;
+
+    // stop here if form is invalid
+    if (this.createaccountForm.invalid) {
+      return;
+    }
+
+    // display form values on success
+    alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.createaccountForm.value, null, 4));
   }
+ 
 }
